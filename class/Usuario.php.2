@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 class Usuario {
 
@@ -7,28 +7,28 @@ class Usuario {
 	private $dessenha;
 	private $dtcadastro;
 
-	public function getIdusuario(){
+	public function getIdusuario() {
 		return $this->idusuario;
 	}
-	public function setIdusuario ($value){
+	public function setIdusuario($value) {
 		$this->idusuario = $value;
 	}
-	public function getDeslogin(){
+	public function getdeslogin() {
 		return $this->deslogin;
 	}
-	public function setDeslogin ($value){
+	public function setDeslogin($value) {
 		$this->deslogin = $value;
 	}
-	public function getDessenha(){
+	public function getDessenha() {
 		return $this->dessenha;
 	}
-	public function setDessenha ($value){
+	public function setDessenha($value) {
 		$this->dessenha = $value;
 	}
-	public function getDtcadastro(){
+	public function getDtcadastro() {
 		return $this->dtcadastro;
 	}
-	public function setDtcadastro ($value){
+	public function setDtcadastro($value) {
 		$this->dtcadastro = $value;
 	}
 
@@ -53,17 +53,18 @@ class Usuario {
 
 	}
 
-	public function __toString(){
+	public function __toString() {
 
-		return json_encode(array(
+	  return json_encode(array(
 
-			"idusuario"=>$this->getIdusuario(),
-			"deslogin"=>$this->getDeslogin(),
-			"dessenha"=>$this->getDessenha(),
-			"dtcadastro"=>$this->getDtcadastro()->format("d-m-Y H:i:s")
+	   	"idusuario"=>$this->getIdusuario(),
+		"deslogin"=>$this->getDeslogin(),
+		"dessenha"=>$this->getDessenha(),
+		"dtcadastro"=>$this->getDtcadastro()->format("d-m-Y H:i:s")
 		));
+
 	}
 
-} 
+}
 
-?>
+ ?>

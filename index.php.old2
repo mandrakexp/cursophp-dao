@@ -1,0 +1,10 @@
+<?php 
+
+require_once ("config.php");
+
+$users = new Usuario();
+
+$users->loadById(2);
+
+echo ($users);
+ ?>
