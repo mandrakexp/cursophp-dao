@@ -42,13 +42,23 @@ echo $aluno;
 
 //atualizando usuario
 
-$usuario = new Usuario();
+/*$usuario = new Usuario();
 
 $usuario->loadbyId(7);
 
 $usuario->update("elvis", "786234");
 
 echo $usuario;
+*/
 
+//deletando usuario
+
+$usuario = new Usuario();
+
+$usuario->loadbyId(9);
+
+$usuario->delete();
+
+echo $usuario;
   
    ?>
