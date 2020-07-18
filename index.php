@@ -23,8 +23,30 @@ require_once("config.php");
 
 // clientes conectados
 
+//$usuario = new Usuario();
+//$usuario->login("6ptelecom","laranja");
+
+//echo $usuario;
+
+//inserindo um usuario
+
+/*$aluno = new Usuario();
+
+$aluno->setDeslogin("6ptelecom2");
+$aluno->setDessenha("setup12534o");
+
+$aluno->insert();
+
+echo $aluno;
+*/
+
+//atualizando usuario
+
 $usuario = new Usuario();
-$usuario->login("mandrakexp","batata");
+
+$usuario->loadbyId(7);
+
+$usuario->update("elvis", "786234");
 
 echo $usuario;
 
